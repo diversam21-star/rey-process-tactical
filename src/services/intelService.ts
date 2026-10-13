@@ -5,7 +5,7 @@ const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 export const generateTacticalIntel = async (route: string, situation: string) => {
   const response = await ai.models.generateContent({
     model: 'gemini-3-flash-preview',
-    contents: `Analyze the following tactical situation for a driver using the Rey Process.
+    contents: `Analyze the following tactical situation for a driver using the REY Process.
     Route: ${route}
     Situation: ${situation}
     Provide:

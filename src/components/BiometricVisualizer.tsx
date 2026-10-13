@@ -90,7 +90,7 @@ export const BiometricVisualizer: React.FC<BiometricVisualizerProps> = ({ isAuth
     <div className="flex flex-col gap-2 p-4 bg-white border-2 border-black shadow-[4px_4px_0px_0px_black]">
       <div className="flex justify-between items-center mb-2">
         <span className="text-[10px] uppercase tracking-tighter font-black text-black">
-          REY BIOMETRIC LOCK
+          ALFONSO BIOMETRIC LOCK
         </span>
         <div className={`w-4 h-4 border-2 border-black ${isAuthorized ? 'bg-tactical-accent' : 'bg-white animate-pulse'}`} />
       </div>
