@@ -7,7 +7,7 @@ import {
 import { BiometricVisualizer } from './components/BiometricVisualizer';
 import { TacticalMap } from './components/TacticalMap';
 import { RingsAnalysis } from './components/RingsAnalysis';
-import { generateTacticalIntel, createTacticalChat } from './services/geminiService';
+import { generateTacticalIntel, createTacticalChat } from './services/intelService';
 import { cn } from './lib/utils';
 
 const StatusCard: React.FC<{

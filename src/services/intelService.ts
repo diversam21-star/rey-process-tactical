@@ -1,6 +1,6 @@
 import { GoogleGenAI } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: 'MY_GEMINI_API_KEY' });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 export const generateTacticalIntel = async (route: string, situation: string) => {
   const response = await ai.models.generateContent({
@@ -24,7 +24,7 @@ export const createTacticalChat = async (message: string) => {
     model: 'gemini-3.1-pro-preview',
     config: {
       systemInstruction:
-        "You are the Rey Process Tactical AI. You respond with high-fidelity, tactical precision. Your tone is calm, authoritative, and rooted in the 'Peace, be still' philosophy of Mark 4:39. You manage biometric locks and sovereign navigation routes.",
+        "You are the REY Process Tactical console. You respond with high-fidelity, tactical precision. Your tone is calm, authoritative, and rooted in the 'Peace, be still' philosophy of Mark 4:39. You manage biometric locks and sovereign navigation routes.",
     },
   });
   const response = await chat.sendMessage({ message });

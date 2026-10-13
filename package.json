@@ -1,7 +1,7 @@
 {
   "name": "rey-process-tactical",
   "version": "1.0.0",
-  "description": "Tactical spatial awareness and biometric navigation system integrating Alfonso Tech and Google AI",
+  "description": "REY Process tactical build, by Samuel Rey Pineda.",
   "type": "module",
   "scripts": {
     "dev": "vite",
